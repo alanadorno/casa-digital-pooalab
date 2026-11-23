@@ -66,6 +66,9 @@ public final class Roteador {
             rotas.add(new RotaRegistrada(rota.metodo(), rota.caminho(), Pattern.compile("^" + regex + "$"), nomes,
                     exige != null, exige != null && exige.administrador(), controlador, metodo));
         }
+        // A reflexão não garante ordem dos métodos (muda de JVM para JVM). Por isso a rota mais específica
+        // (menos parâmetros no caminho) vem primeiro: "/materias/nova" antes de "/materias/{id}".
+        rotas.sort(java.util.Comparator.comparingInt((RotaRegistrada r) -> r.nomes().size()).thenComparing(RotaRegistrada::caminho));
         return this;
     }
 

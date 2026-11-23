@@ -31,6 +31,6 @@ Se a validação falha, o painel mostra o erro **junto de cada campo**. Se a gra
 
 **Maior risco:** (1) de **uso** — a equipe do podcast conseguir publicar sozinha (ainda sem teste real: **[PREENCHER]**); (2) de **acesso** — o player do YouTube depende de internet durante a mostra; mitigação: execução local, miniaturas/vídeo de contingência em `demo/` e roteiro visual.
 
-**Teste principal:** (a) automatizado: `java Tarefas.java test` executa 67 testes, incluindo o fluxo P3 ponta a ponta por HTTP; (b) manual: o roteiro de `demo/roteiro-demonstracao.md` feito por uma pessoa fora da equipe de desenvolvimento **[PREENCHER: quem, quando, resultado]**.
+**Teste principal:** (a) automatizado: `java Tarefas.java test` executa 68 testes, incluindo o fluxo P3 ponta a ponta por HTTP; (b) manual: o roteiro de `demo/roteiro-demonstracao.md` feito por uma pessoa fora da equipe de desenvolvimento **[PREENCHER: quem, quando, resultado]**.
 
 **Limitações conhecidas:** e-mail simulado; dados em arquivo JSON e sessões em memória (um servidor só); vídeos e miniaturas dependem do YouTube; fontes de licença não verificada (ver declaração); amostra de validação pequena (19 pessoas) e sobre intenção de uso.

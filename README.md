@@ -79,7 +79,7 @@ Para recomeçar do zero, apague a pasta `data/`. Mais opções em `config/casa-d
 java Tarefas.java test
 ```
 
-Saída esperada: lista de testes com `[ok]` e, no fim, `67 passaram, 0 falharam`. Os testes cobrem regras de negócio (RN01–RN14),
+Saída esperada: lista de testes com `[ok]` e, no fim, `68 passaram, 0 falharam`. Os testes cobrem regras de negócio (RN01–RN14),
 processos P2–P6, concorrência (100 sugestões simultâneas em threads virtuais), persistência e o servidor real por HTTP
 (login, CSRF, publicação, falhas simuladas). O executor de testes é nosso (usa **reflexão** e a anotação `@Teste`), sem JUnit.
 

@@ -52,6 +52,27 @@ public class ReflexaoTest {
         Afirmar.verdadeiro(roteador.resolver(Requisicao.simulada("GET", "/segredo", Map.of())).isEmpty(), "método HTTP errado não casa");
     }
 
+    public static final class ControladorComConflito {
+        @Rota(caminho = "/itens/{id}")
+        public Resposta porId(Requisicao r) {
+            return Resposta.texto(200, "id " + r.parametro("id"));
+        }
+
+        @Rota(caminho = "/itens/novo")
+        public Resposta novo(Requisicao r) {
+            return Resposta.texto(200, "novo");
+        }
+    }
+
+    @Teste("Rota literal vence rota com parâmetro, qualquer que seja a ordem dos métodos (a reflexão não garante ordem)")
+    void rotaEspecificaPrimeiro() {
+        Roteador roteador = new Roteador().registrar(new ControladorComConflito());
+        Requisicao req = Requisicao.simulada("GET", "/itens/novo", Map.of());
+        Afirmar.igual("novo", roteador.resolver(req).orElseThrow().executar(req).corpoComoTexto(), "/itens/novo");
+        Requisicao req2 = Requisicao.simulada("GET", "/itens/7", Map.of());
+        Afirmar.igual("id 7", roteador.resolver(req2).orElseThrow().executar(req2).corpoComoTexto(), "/itens/7");
+    }
+
     @Teste("Parâmetro do caminho ({nome}) é extraído por expressão regular com grupo nomeado")
     void parametroDoCaminho() {
         Roteador roteador = new Roteador().registrar(new ControladorDeTeste());

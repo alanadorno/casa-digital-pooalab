@@ -96,6 +96,6 @@ Senhas com **PBKDF2** e sal por usuário (`infra/Senhas`); cookie de sessão `Ht
 
 ## Como o professor pode conferir rapidamente
 
-1. `java Tarefas.java test` — 67 testes por reflexão.
+1. `java Tarefas.java test` — 68 testes por reflexão.
 2. Tela **Painel → Demonstração**: mostra as rotas descobertas por reflexão, os eventos do *Observer*, as chamadas medidas pelo *Proxy* e o simulador de falhas.
 3. Ler, nesta ordem: `app/Sistema.java` → `web/FrontController.java` → `servico/SugestoesServico.java` → `dominio/Sugestao.java`.
