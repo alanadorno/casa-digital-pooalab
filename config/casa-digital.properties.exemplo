@@ -1,0 +1,16 @@
+# Copie este arquivo para config/casa-digital.properties para alterar a configuração.
+# Todas as chaves são opcionais. Prioridade: -Dcasa.chave > variável CASA_CHAVE > este arquivo > padrão.
+# NÃO coloque senhas reais aqui: o arquivo config/casa-digital.properties é ignorado pelo Git.
+
+# porta=8080
+# host=127.0.0.1            # use 0.0.0.0 para abrir no celular, na mesma rede
+# dados.pasta=data          # deixe vazio para guardar tudo só em memória
+# demo.dados=true           # carrega matérias e itens UCSAL de demonstração na primeira execução
+
+# Modo "apresentação rápida": o reenvio de e-mail que normalmente espera 15 minutos passa a esperar 20 segundos
+# reenvio.segundos=20
+# agendador.segundos=5
+
+# Credenciais FICTÍCIAS de demonstração (valores padrão)
+# admin.email=equipe@exemplo.com
+# admin.senha=trocar-senha-123

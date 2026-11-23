@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Casa Digital — Pitch POOALAB 2026.2</title>
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  :root { --laranja:#FF5B22; --azul:#3763BD; --verde:#25B35E; --amarelo:#FDBD5B; --preto:#161616; --creme:#F9EAD7; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Inter, "Helvetica Neue", Arial, sans-serif; color: var(--preto); background: #fff; }
+  .slide { width: 1280px; height: 720px; padding: 56px 72px; background: var(--creme); position: relative; overflow: hidden; page-break-after: always; display: flex; flex-direction: column; }
+  .slide:last-child { page-break-after: auto; }
+  .faixa { position: absolute; left: 0; top: 0; width: 100%; height: 14px; background: linear-gradient(90deg, var(--amarelo) 0 25%, var(--laranja) 25% 50%, var(--azul) 50% 75%, var(--verde) 75%); }
+  .rodape { position: absolute; left: 72px; right: 72px; bottom: 22px; display: flex; justify-content: space-between; font-size: 14px; color: #555; }
+  h1 { font-size: 64px; line-height: 1.05; letter-spacing: -1px; }
+  h2 { font-size: 42px; line-height: 1.1; margin-bottom: 26px; letter-spacing: -.5px; }
+  p, li { font-size: 24px; line-height: 1.4; }
+  ul { padding-left: 28px; } li { margin-bottom: 10px; }
+  .etiqueta { display: inline-block; padding: 6px 16px; border: 3px solid var(--preto); border-radius: 999px; font-weight: 700; font-size: 18px; background: #fff; }
+  .cartao { background: #fff; border: 3px solid var(--preto); border-radius: 18px; padding: 22px 26px; }
+  .grade { display: grid; gap: 22px; }
+  .g2 { grid-template-columns: 1fr 1fr; } .g3 { grid-template-columns: 1fr 1fr 1fr; }
+  .numero { font-size: 92px; font-weight: 800; line-height: 1; }
+  .laranja { color: var(--laranja); } .azul { color: var(--azul); } .verde { color: var(--verde); }
+  .peq { font-size: 18px; color: #444; line-height: 1.35; }
+  .miolo { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  img.tela { width: 100%; border: 3px solid var(--preto); border-radius: 12px; display: block; }
+  .fluxo { display: flex; align-items: stretch; gap: 10px; }
+  .fluxo .passo { flex: 1; background: #fff; border: 3px solid var(--preto); border-radius: 14px; padding: 16px 14px; font-size: 20px; font-weight: 600; text-align: center; display: flex; align-items: center; justify-content: center; }
+  .seta { align-self: center; font-size: 30px; font-weight: 800; }
+  table { border-collapse: collapse; width: 100%; background: #fff; border: 3px solid var(--preto); border-radius: 12px; overflow: hidden; }
+  td, th { padding: 10px 14px; text-align: left; font-size: 19px; border-bottom: 2px solid #ddd; vertical-align: top; }
+  th { background: var(--amarelo); }
+  .marca { color: #b3001b; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<section class="slide">
+  <div class="faixa"></div>
+  <div class="miolo">
+    <span class="etiqueta" style="align-self:flex-start;margin-bottom:28px">POOALAB 2026.2 · Programação Orientada a Objetos Avançada</span>
+    <h1>Casa Digital do<br><span class="laranja">“Isso Não É Um Rádio”</span></h1>
+    <p style="margin-top:28px;max-width:900px">Uma casa própria para o podcast universitário: episódios, matéria completa e informação da UCSAL em um só lugar.</p>
+  </div>
+  <p class="peq">Equipe: <span class="marca">[PREENCHER nomes completos]</span> · Turma: <span class="marca">[PREENCHER]</span> · Prof. Mario Jorge Pereira</p>
+  <div class="rodape"><span>Pitch · 5 minutos + demonstração ao vivo</span><span>1</span></div>
+</section>
+
+<section class="slide">
+  <div class="faixa"></div>
+  <h2>O problema, em uma situação concreta</h2>
+  <div class="grade g2" style="margin-top:6px">
+    <div class="cartao"><span class="etiqueta">Visitante</span>
+      <p style="margin-top:14px">Aluno, professor ou funcionário da UCSAL quer rever um episódio, entender melhor um tema ou saber de uma <b>liga, projeto ou evento</b>.</p>
+      <p class="peq" style="margin-top:12px">Hoje procura no Instagram, no YouTube, em cartazes e grupos de WhatsApp. Os episódios <b>se perdem no feed</b>.</p></div>
+    <div class="cartao"><span class="etiqueta">Equipe do podcast</span>
+      <p style="margin-top:14px">Estudantes de Comunicação produzem o conteúdo, mas <b>não têm um canal próprio</b> para publicar e organizar por editoria, nem lugar para a matéria completa.</p>
+      <p class="peq" style="margin-top:12px">Sem um arquivo organizado, o trabalho de cada episódio é subaproveitado.</p></div>
+  </div>
+  <p style="margin-top:28px"><b>Consequência:</b> informação difícil de achar e conteúdo disperso.</p>
+  <div class="rodape"><span>Casa Digital · POOALAB 2026.2</span><span>2</span></div>
+</section>
+
+<section class="slide">
+  <div class="faixa"></div>
+  <h2>O que as evidências dizem (e o que não dizem)</h2>
+  <div class="grade g3">
+    <div class="cartao"><div class="numero laranja">19</div><p class="peq">pessoas da comunidade UCSAL responderam a pesquisa</p></div>
+    <div class="cartao"><div class="numero azul">42%</div><p class="peq">acharam difícil encontrar informações sobre ligas, projetos e eventos (nota 1 ou 2, escala de 1 a 5)</p></div>
+    <div class="cartao"><div class="numero verde">84%</div><p class="peq">disseram que provavelmente acessariam um site com esse conteúdo</p></div>
+  </div>
+  <ul style="margin-top:26px;font-size:22px">
+    <li>As <b>regras de publicação</b> (revisão, destaque de 7 dias, reenvio de e-mail, conferência de informações) foram <b>confirmadas com a equipe do podcast</b>.</li>
+    <li><b>Limites honestos:</b> amostra pequena e não aleatória; mede <i>intenção</i> de uso. Dados da disciplina anterior (Processos de Negócios), reaproveitados e declarados.</li>
+    <li><span class="marca">[PREENCHER]</span> O que o teste com usuário real mudou na solução.</li>
+  </ul>
+  <div class="rodape"><span>Fonte: docs/problema-validacao.md</span><span>3</span></div>
+</section>
+
+<section class="slide">
+  <div class="faixa"></div>
+  <h2>Proposta de valor e recorte do MVP</h2>
+  <p>Um só lugar, de acesso livre e sem cadastro: <b>episódio + matéria completa</b> (vídeo, texto e referências), seis editorias, home em capa de jornal e seção UCSAL conferida com a fonte.</p>
+  <p style="margin:26px 0 14px"><b>Recorte: a equipe publica, o visitante lê.</b> Fluxo principal (P3):</p>
+  <div class="fluxo">
+    <div class="passo">Login da equipe</div><div class="seta">→</div>
+    <div class="passo">Preencher matéria</div><div class="seta">→</div>
+    <div class="passo">Validar<br>(RN02–RN04)</div><div class="seta">→</div>
+    <div class="passo">Gravar</div><div class="seta">→</div>
+    <div class="passo">Home e editoria atualizadas</div>
+  </div>
+  <p class="peq" style="margin-top:22px"><b>Também no MVP:</b> sugestão de pauta com e-mail e reenvio automático (P5) · seção UCSAL com vigência de eventos (P6).<br><b>Fora:</b> busca, app de celular, envio real de e-mail.</p>
+  <div class="rodape"><span>Fonte: docs/definicao-mvp.md</span><span>4</span></div>
+</section>
+
+<section class="slide">
+  <div class="faixa"></div>
+  <h2>Demonstração ao vivo <span class="peq" style="font-weight:400">(estes slides só guardam o roteiro)</span></h2>
+  <div class="grade g3" style="margin-bottom:16px">
+    <div><img class="tela" src="../demo/contingencia/imagens/06-erros-de-validacao.png" style="height:300px;object-fit:cover;object-position:top"><p class="peq" style="margin-top:8px"><b>1.</b> Publicar incompleto: erros junto de cada campo</p></div>
+    <div><img class="tela" src="../demo/contingencia/imagens/09-home-com-destaque.png" style="height:300px;object-fit:cover;object-position:top"><p class="peq" style="margin-top:8px"><b>2.</b> Publicada: aparece na home e na editoria</p></div>
+    <div><img class="tela" src="../demo/contingencia/imagens/12-falha-na-gravacao.png" style="height:300px;object-fit:cover;object-position:top"><p class="peq" style="margin-top:8px"><b>3.</b> Gravação falha: erro claro, home intacta</p></div>
+  </div>
+  <p class="peq">Dados de demonstração preparados · credenciais fictícias · simulador de falhas no painel · contingência em <b>demo/contingencia/</b></p>
+  <div class="rodape"><span>Roteiro: demo/roteiro-demonstracao.md</span><span>5</span></div>
+</section>
+
+<section class="slide">
+  <div class="faixa"></div>
+  <h2>Decisões: Java 21 puro para aplicar POO avançada</h2>
+  <table>
+    <tr><th style="width:30%">Problema real</th><th>Solução no código</th></tr>
+    <tr><td>E-mail lento ou fora do ar não pode travar o visitante (RN09)</td><td><b>Threads virtuais + CompletableFuture</b>, reenvio pelo <b>Agendador</b>; <b>State</b> da sugestão</td></tr>
+    <tr><td>Home precisa atualizar só depois de gravar (P3)</td><td><b>Observer</b> com eventos <b>sealed</b>; <b>Prototype</b> evita objeto “meio publicado”</td></tr>
+    <tr><td>Destaque automático ou manual de 7 dias (RN05)</td><td><b>Strategy</b> + <b>Factory Method</b></td></tr>
+    <tr><td>Rotas, validação e JSON sem framework</td><td><b>Reflexão e anotações</b> (@Rota, @Obrigatorio), <b>Front Controller</b> + <b>Chain of Responsibility</b></td></tr>
+    <tr><td>Demonstrar falhas ao vivo sem mexer no código real</td><td><b>Proxy dinâmico</b> e <b>Decorator</b></td></tr>
+  </table>
+  <p class="peq" style="margin-top:14px">Camadas por interfaces e uma única raiz de composição (GRASP/SOLID). Mapa completo: docs/arquitetura-pooa.md</p>
+  <div class="rodape"><span>Bônus POOA: aplicação pertinente, não decorativa</span><span>6</span></div>
+</section>
+
+<section class="slide">
+  <div class="faixa"></div>
+  <h2>Testes, limitações e riscos conhecidos</h2>
+  <div class="grade g2">
+    <div class="cartao"><span class="etiqueta">Testes</span>
+      <ul style="margin-top:14px;font-size:21px">
+        <li><b>67 testes automatizados</b> (<code>java Tarefas.java test</code>)</li>
+        <li>Regras RN01–RN14, concorrência (100 sugestões simultâneas), persistência</li>
+        <li>Servidor real por HTTP: login, CSRF, publicação, falhas</li></ul></div>
+    <div class="cartao"><span class="etiqueta">Limitações</span>
+      <ul style="margin-top:14px;font-size:21px">
+        <li>E-mail <b>simulado</b> (sem SMTP real)</li>
+        <li>Dados em arquivo JSON; um servidor só</li>
+        <li>Vídeos dependem do YouTube e de internet</li>
+        <li>Amostra de validação pequena (19)</li></ul></div>
+  </div>
+  <p class="peq" style="margin-top:18px"><b>Preexistente declarado:</b> problema, regras, pesquisa e identidade visual vêm da disciplina Processos de Negócios. <b>Novo aqui:</b> toda a implementação Java, testes e documentação técnica. IA usada e declarada (Anexo E).</p>
+  <div class="rodape"><span>Fonte: README.md · docs/declaracao-ia-terceiros.md</span><span>7</span></div>
+</section>
+
+<section class="slide">
+  <div class="faixa"></div>
+  <div class="miolo">
+    <h2>Resultado, aprendizado e próximo passo</h2>
+    <ul>
+      <li><b>Resultado:</b> o fluxo principal funciona de ponta a ponta, com falhas tratadas e testadas.</li>
+      <li><b>Aprendizado:</b> o problema está em <i>reunir e achar</i> o conteúdo; regras confirmadas com a equipe viraram critérios de pronto e testes. <span class="marca">[PREENCHER aprendizado da equipe]</span></li>
+      <li><b>Próximo passo mais importante:</b> homologar com a equipe do podcast e trocar o e-mail simulado por SMTP real.</li>
+    </ul>
+    <p style="margin-top:30px;font-size:30px"><b>Obrigado!</b> <span class="peq">Perguntas?</span></p>
+  </div>
+  <div class="rodape"><span>Casa Digital do “Isso Não É Um Rádio” · POOALAB 2026.2</span><span>8</span></div>
+</section>
+
+</body>
+</html>

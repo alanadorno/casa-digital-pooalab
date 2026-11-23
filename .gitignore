@@ -1,0 +1,12 @@
+# gerados
+out/
+data/
+*.class
+# segredos e configuração local
+.env
+config/*.properties
+!config/*.exemplo
+# ambiente
+.idea/
+.vscode/
+*.log

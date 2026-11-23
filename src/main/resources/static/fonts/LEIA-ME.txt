@@ -1,0 +1,8 @@
+Fontes usadas pela identidade visual do podcast "Isso Não É Um Rádio":
+  BrasikaDisplay.otf  (títulos)
+  HeyGotcha.otf       (menu e textos de apoio)
+
+Origem: vieram do protótipo do Figma do trabalho anterior (disciplina Processos de Negócios).
+Licença: NÃO VERIFICADA. Fontes distribuídas como "Trial" costumam permitir só uso pessoal/teste.
+Uso aqui: demonstração acadêmica, sem publicação comercial. Para publicar de verdade, confirme a
+licença com o autor da fonte ou troque por uma fonte livre. Declarado em docs/declaracao-ia-terceiros.md.
